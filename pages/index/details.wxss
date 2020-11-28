@@ -1,0 +1,83 @@
+/* pages/index/details.wxss */
+.restaurants-container{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+.card-review-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+.review-section {
+  background-color: white;
+  height: 110rpx;
+  width: 500rpx;
+  flex-direction: column;
+  display: left;
+  padding: 20rpx;
+  box-sizing:border-box;
+  font-size: 30rpx;
+}
+
+.button-submit{
+  height: 110rpx;
+  width: 500rpx;
+  color: pink;
+  background-color: white;
+  border-radius: 0rpx;
+  font-size: 32rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx
+}
+page {background-color: white;}
+
+.card {
+  background-color: white;
+  border: 1rpx solid #000000;
+
+}
+
+.card-img{
+  width: 100%;
+}
+
+.new-review{
+  border: 1rpx solid #000000;
+  padding: 30rpx;
+
+}
+
+.post-review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.comment{
+  border: 3rpx solid #000000;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+button{
+  border: 2rpx solid blue;
+}
+
+.name{
+  font-size: 40rpx;
+  text-align: center;
+  margin: 10rpx;
+  
+
+}

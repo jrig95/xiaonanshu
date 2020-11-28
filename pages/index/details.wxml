@@ -1,0 +1,28 @@
+<!--pages/index/details.wxml-->
+<view class="restaurants-container">
+
+<view class="card" >
+  <view class="card-main">
+    <image class="card-img" mode="aspectFill" src="{{Restaurant.image}}">restaraunt</image>
+  </view>
+  <view class="name">{{Restaurant.name}}</view>
+  </view>
+
+  <view class="missing-review" wx:if="{{comments.length == 0}}">“There’s nothing here yet!”</view>
+  <view class="new-review" wx:for="{{comments}}" wx:key="index">
+    <view class="review-container">
+      <view class="review">{{item.comments}}</view>
+    </view>
+</view>
+
+<form bindsubmit="postStory">
+  <view class="post-review">
+      <textarea class="comment" name="comment" bindconfirm="formSubmit" placeholder="Post your review!"></textarea>
+      <button class="button" form-type="submit">Submit</button>
+</view>
+  </form>
+
+
+
+  
+</view>

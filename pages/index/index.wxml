@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view wx:if="{{currentUser}}">
+  <text>Welcome back {{currentUser.nickname}}!</text>
+</view>
+<view wx:else>
+<button open-type="getUserInfo" bindgetuserinfo="userInfoHandler">微信 Login</button>
+</view>
+
+<form bindreset="formReset">
+  <view class="search-form">
+      <input class="search" name="search" bindinput="inputSearch" bindconfirm="formReset" placeholder="Search for restaurant" />
+      <button class="button" form-type="reset">Submit</button>
+</view>
+  </form>
+
+<view class="masonry">
+<view class="card" bindtap="goToRestaurant" wx:for="{{items}}" id="{{it.id}}" wx:for-item="it">
+  <view class="card-main">
+    <image class="card-img" mode="aspectFill" src="{{it.image}}">restaraunt</image>
+  </view>
+  <view class="name">{{it.name}}</view>
+  </view>
+
+  
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
